@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Breaking Bad</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/cover/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="/js/knockout.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/cover.css" rel="stylesheet">
+  </head>
+  
+  <body data-bind="with: BreakingBadViewModel">
+        <section id="pagina_inicial" class="cover">
+          <header class="masthead mb-auto fixed-top">
+            <div class="inner">
+              <h3 class="masthead-brand">Breaking Bad</h3>
+              <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#pagina_sobre">Sobre</a>
+                <a class="nav-link" href="#pagina_episodes">Episódios</a>
+                <a class="nav-link" href="#pagina_caracters">Personagens</a>
+                <div class="toggle_mode">
+                  <i class="bi bi-brightness-alt-high"></i>
+                  <i class="bi bi-brightness-alt-high-fill"></i>
+                </div>
+              </nav>
+            </div>
+          </header>
+            <div class="bg-box">
+                <h1 class="cover-heading">É fã do Breaking Bad?</h1>
+                <p class="lead">Saiba tudo sobre sua série favorita.</p>
+                <p class="lead">
+                <a href="#pagina_sobre" class="btn btn-lg btn-secondary">Saiba Mais</a>
+                </p>
+            </div>   
+        </section>
+        <section id="pagina_sobre">
+          <div class="container">
+            <div class="text-center mb-4 text-white">                
+              <h2>Sobre</h2>
+            </div>
+            <hr>  
+            <div style="text-align: justify; text-justify: inter-word; color: white; font-size: 17px;">
+              Breaking Bad é uma série de televisão americana criada e produzida por Vince Gilligan. Ela retrata a vida do químico Walter White, 
+              um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, 
+              uma esposa grávida e dívidas intermináveis. White, então, é diagnosticado com um câncer no pulmão - o que o leva a sofrer um colapso emocional 
+              e abraçar uma vida de crimes para pagar suas dívidas hospitalares e dar uma boa vida aos seus filhos. Walter resolve produzir metanfetamina 
+              de alta pureza com seu ex-aluno, Jesse Pinkman.
+              Breaking Bad se passa em Albuquerque, Novo México, e gira em torno das escolhas de seu protagonista, 
+              as quais o levam a uma intensa, dolorosa e inevitável transformação. Amplamente considerada como uma das melhores séries da história, 
+              ao seu final, foi um dos programas da televisão a cabo mais assistidos nos Estados Unidos, recebendo inúmeros prémios, incluindo dezesseis 
+              Primetime Emmy Awards, oito Satellite Awards, dois Globos de Ouro e um Prémio Escolha Popular. Em 2014, entrou para o Livro dos Recordes como 
+              o seriado mais bem avaliado de todos os tempos pela crítica.
+              A série foi originalmente exibida pelo canal de televisão por assinatura AMC, onde estreou no dia 20 de janeiro de 2008 e, depois de cinco 
+              temporadas de sucesso, teve seu último episódio transmitido no dia 29 de setembro de 2013. Em Portugal, foi exibida pelos canais SIC Radical, 
+              TVséries e MOV. No Brasil, o seriado é exibido pelo canal pago AXN e pelo serviço de streaming Netflix e, na TV aberta, foi exibida pela Rede 
+              Record e será exibida pela Band.
+            </div>
+          </div>          
+        </section>
+        <section id="pagina_episodes">
+          <div class="container">
+            <div class="container">
+              <div class="text-center mb-4 text-white">                
+                <h2>Temporadas</h2>
+              </div>
+
+              <hr> 
+
+              <div class="pagina__season my-4">
+                <div class="pagina__season___header" data-toggle="collapse" href="#season_1" role="button" aria-expanded="false" aria-controls="season_1">
+                  <h5>Temporada 1</h5>
+                  <small class="pagina__season___header____episodioLength"><span class="mr-2" data-bind="text: FirstSeason().length"></span> Episódios</small>
+                </div>             
+                <!-- Collapsed content -->
+                <div class="collapse" id="season_1">
+                  <div class="card card-body" style="padding: 0;">
+                    <div class="pagina__season___collapseBody" data-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="card_2">
+                      <div data-bind="foreach: FirstSeason">
+                        <div class="pagina_season___episodio">
+                          <h5 data-bind="text: title"></h5>
+                          <p>Episódio: <span data-bind="text: episode"></span></p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pagina__season my-4">
+                <div class="pagina__season___header" data-toggle="collapse" href="#season_2" role="button" aria-expanded="false" aria-controls="season_2">
+                  <h5>Temporada 2</h5>
+                  <small class="pagina__season___header____episodioLength"><span class="mr-2" data-bind="text: SecondSeason().length"></span> Episódios</small>
+                </div>             
+                <!-- Collapsed content -->
+                <div class="collapse" id="season_2">
+                  <div class="card card-body" style="padding: 0;">
+                    <div class="pagina__season___collapseBody" data-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="card_2">
+                      <div data-bind="foreach: SecondSeason">
+                        <div class="pagina_season___episodio">
+                          <h5 data-bind="text: title"></h5>
+                          <p>Episódio: <span data-bind="text: episode"></span></p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagina__season my-4">
+                <div class="pagina__season___header" data-toggle="collapse" href="#season_3" role="button" aria-expanded="false" aria-controls="season_3">
+                  <h5>Temporada 3</h5>
+                  <small class="pagina__season___header____episodioLength"><span class="mr-2" data-bind="text: ThirdSeason().length"></span> Episódios</small>
+                </div>             
+                <!-- Collapsed content -->
+                <div class="collapse" id="season_3">
+                  <div class="card card-body" style="padding: 0;">
+                    <div class="pagina__season___collapseBody" data-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="card_2">
+                      <div data-bind="foreach: ThirdSeason">
+                        <div class="pagina_season___episodio">
+                          <h5 data-bind="text: title"></h5>
+                          <p>Episódio: <span data-bind="text: episode"></span></p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagina__season my-4">
+                <div class="pagina__season___header" data-toggle="collapse" href="#season_4" role="button" aria-expanded="false" aria-controls="season_4">
+                  <h5>Temporada 4</h5>
+                  <small class="pagina__season___header____episodioLength"><span class="mr-2" data-bind="text: FourthSeason().length"></span> Episódios</small>
+                </div>             
+                <!-- Collapsed content -->
+                <div class="collapse" id="season_4">
+                  <div class="card card-body" style="padding: 0;">
+                    <div class="pagina__season___collapseBody" data-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="card_2">
+                      <div data-bind="foreach: FourthSeason">
+                        <div class="pagina_season___episodio">
+                          <h5 data-bind="text: title"></h5>
+                          <p>Episódio: <span data-bind="text: episode"></span></p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagina__season my-4">
+                <div class="pagina__season___header" data-toggle="collapse" href="#season_5" role="button" aria-expanded="false" aria-controls="season_5">
+                  <h5>Temporada 5</h5>
+                  <small class="pagina__season___header____episodioLength"><span class="mr-2" data-bind="text: FifthSeason().length"></span> Episódios</small>
+                </div>             
+                <!-- Collapsed content -->
+                <div class="collapse" id="season_5">
+                  <div class="card card-body" style="padding: 0;">
+                    <div class="pagina__season___collapseBody" data-toggle="collapse" href="#card_2" role="button" aria-expanded="false" aria-controls="card_2">
+                      <div data-bind="foreach: FifthSeason">
+                        <div class="pagina_season___episodio">
+                          <h5 data-bind="text: title"></h5>
+                          <p>Episódio: <span data-bind="text: episode"></span></p>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pagina_caracters">
+          <div class="album py-5">
+            <div id="personagens_list" class="container">
+              <div class="text-center mb-4 text-white">                
+                <h2>Personagens Prícipais</h2>
+              </div>
+              <hr>    
+              <div class="row" data-bind="foreach: PersonagensPrincipais()">
+                <div class="col-md-4 p-5">
+                  <div class="card mb-4 shadow-sm">
+                    <img data-bind="attr: { src: img }" style="height: 280px; width: 100%;">        
+                    <div class="card-body">
+                      <h4 data-bind="text: name"></h4>
+                      <p class="card-text" data-bind="text: nickname"></p>
+                      <p data-bind="text: occupation" style="height: 50px;"></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Ver mais</button>
+                        </div>
+                        <small class="text-muted" data-bind="text: category"></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="mastfoot bg-dark">
+          <div class="">
+            <p>Api Test <a href="https://breakingbadapi.com/"></a>by <a href="https://github.com/guilhermevesentini">Github - GuilhermeVesentini</a>.</p>
+          </div>
+        </footer>
+    <script src="/js/requestApi.js"></script>
+  </body>
+</html>
