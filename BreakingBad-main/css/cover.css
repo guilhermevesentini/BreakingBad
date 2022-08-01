@@ -1,0 +1,213 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+hr {
+  margin: 40px 0;border-bottom: 1.5px solid white;
+}
+
+.toggle_mode {
+  padding: 0px 25px;
+  font-size: 22px;
+}
+
+.toggle_mode .bi-brightness-alt-high{
+  color: white;
+  cursor: pointer;
+}
+
+.toggle_mode .bi-brightness-alt-high-fill {
+  display: none;
+}
+
+/*
+ * Base structure
+ */
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+ html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/*
+ * Header
+ */
+ .masthead {
+  margin-bottom: 2rem;
+  height: 80px;
+  padding: 20px;
+  opacity: 0.9;
+  background-color: rgba(128, 128, 128, 0.137);
+}
+
+.masthead_box {
+  margin: 0 20px;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  color: white;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+@media (max-width: 48em) {
+  .masthead-brand {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .masthead {
+    height: 112px;
+  }
+}
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+/*
+ * Cover
+ */
+.cover {
+  background-image: url(../img/breakingb.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.bg-box {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(51, 51, 51, 0.747);
+  color: white;
+  padding: 20px 100px;
+  border-radius: 20px;
+}
+main .lead .btn:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+/*
+ * Contéudo
+ */
+
+ .container {
+  padding: 3rem 1rem;
+ }
+ #pagina_inicial{
+  height: 100vh;
+  background-color: #333;
+}
+
+#pagina_sobre {
+  background-color: #333;
+  padding: 4% 0 0 0;
+}
+
+#pagina_episodes{
+  background-color: #333;
+  display: block;
+}
+
+#pagina_caracters{
+  background-color: #333;
+}
+.pagina__season{
+  background-color: rgb(24, 24, 24);
+}
+.pagina__season___header {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+}
+.pagina__season___header:hover {
+  background-color: rgb(83, 83, 83);
+  transition: 0.6s ease-in-out;
+}
+.pagina__season___header____episodioLength {
+  display: flex;
+  color: gray;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagina__season .card {
+  background-color: rgba(51, 51, 51, 0.466);
+  color: cadetblue;
+}
+
+.pagina_season___episodio {
+  padding: 15px 20px 10px;
+  background-color: rgba(53, 53, 53, 0.651);
+  margin: 10px 0;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  padding: 10px;
+  text-align: center;
+  height: 40px;
+  background-color: #333;
+  
+  color: rgba(255, 255, 255, .5);
+}
